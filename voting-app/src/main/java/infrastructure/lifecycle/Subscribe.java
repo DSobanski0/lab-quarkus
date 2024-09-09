@@ -1,9 +1,8 @@
 package infrastructure.lifecycle;
 
 import domain.Election;
-import infrastructure.lifecycle.repositories.RedisElectionRepository;
+import infrastructure.repositories.RedisElectionRepository;
 import io.quarkus.redis.datasource.ReactiveRedisDataSource;
-import io.quarkus.redis.datasource.RedisDataSource;
 import io.quarkus.runtime.Startup;
 import io.smallrye.mutiny.Multi;
 import io.smallrye.mutiny.infrastructure.Infrastructure;
