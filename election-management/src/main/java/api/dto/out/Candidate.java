@@ -1,7 +1,10 @@
 package api.dto.out;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.util.Optional;
 
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
 public record Candidate(
         String id,
         Optional<String> photo,

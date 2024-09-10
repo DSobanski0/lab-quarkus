@@ -29,12 +29,13 @@ public class ElectionCandidate {
         this.votes = votes;
     }
 
-    public static ElectionCandidate fromDomain(Election election, Candidate candidate, Integer votes) {
-        ElectionCandidate entity = new ElectionCandidate();
+    public static ElectionCandidate fromDomain(domain.Election election, domain.Candidate candidate, Integer votes) {
+        var entity = new ElectionCandidate();
 
         ElectionCandidateId id = new ElectionCandidateId();
         id.setElectionId(election.id());
         id.setCandidateId(candidate.id());
+
         entity.setId(id);
         entity.setVotes(votes);
 
